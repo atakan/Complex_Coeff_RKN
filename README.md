@@ -2,12 +2,12 @@ Constructing the methods
 ------------------------
 
 First, start with creating the coefficients of the commutators in the BCH
-expansion this will come in handy in a minute. You actually do not need
+expansion. This will come in handy in a minute. You actually do not need
 to create them, the resultant files are available in this repository.
 Here is how to create them though
 
-$ python RKNA_BCH_expan_coeffs.py
-$ python RKNB_BCH_expan_coeffs.py
+   $ python RKNA_BCH_expan_coeffs.py
+   $ python RKNB_BCH_expan_coeffs.py
 
 This gives two files for your viewing 'D5_RKNA.dat' and 'D5_RKNB.dat',
 and two more files for MAPLE's consumption 'RKN_methodA_coeffs.mw',
