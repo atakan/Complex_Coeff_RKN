@@ -4,7 +4,7 @@ Constructing the methods
 First, start with creating the coefficients of the commutators in the BCH
 expansion. This will come in handy in a minute. You actually do not need
 to create them, the resultant files are available in this repository.
-Here is how to create them though
+Here is how to create them just in case
 
      $ python RKNA_BCH_expan_coeffs.py
      $ python RKNB_BCH_expan_coeffs.py
@@ -19,16 +19,16 @@ arrangements. See the manuscript for details.
 
 We first create MAPLE inputs with Python programs by running, e.g,
 
-$ python random_grid_methA.py > random_grid_methA_seed17.mpl
-$ python random_grid_methB.py > random_grid_methB_seed18.mpl
+     $ python random_grid_methA.py > random_grid_methA_seed17.mpl
+     $ python random_grid_methB.py > random_grid_methB_seed18.mpl
 
 Modify random seeds (! and output file names ! both on command line and
 in MAPLE programs created !) and number of tries appropriately.
 
 Now we can feed these into MAPLE
 
-$ maple < random_grid_methA_seed17.mpl
-$ maple < random_grid_methB_seed18.mpl
+     $ maple < random_grid_methA_seed17.mpl
+     $ maple < random_grid_methB_seed18.mpl
 
 This will produce some solutions and write them
 into two files 'ord_cond_search_methA_seed17.mw' and
@@ -45,8 +45,8 @@ imaginary), REAL (the solution to order conditions and hence the
 timestep coefficients are purely real), OTHER. We do this in two steps
 first a Python program creates a MAPLE program
 
-$ python fancy_output_RKNA.py > fancy_output_RKNA_seed17.mpl
-$ python fancy_output_RKNB.py > fancy_output_RKNB_seed18.mpl
+     $ python fancy_output_RKNA.py > fancy_output_RKNA_seed17.mpl
+     $ python fancy_output_RKNB.py > fancy_output_RKNB_seed18.mpl
 
 These Python scripts have slightly different functionality. The second
 one is capable of reading in multiple files. They also try to detect and
@@ -54,8 +54,8 @@ remove duplicate solutions. This functionality is not working perfectly
 though, some duplicates remain.
 We then feed the output into MAPLE:
 
-$ maple < fancy_output_RKNA_seed17.mpl
-$ maple < fancy_output_RKNB_seed18.mpl
+     $ maple < fancy_output_RKNA_seed17.mpl
+     $ maple < fancy_output_RKNB_seed18.mpl
 
 Again, pay attention to changing random seeds at appropriate places. You
 can easily overwrite a file that took a long time to compute. This is
@@ -86,7 +86,7 @@ its vicinity. This process can be largely automated. If you want to
 monitor the outcome of the MAPLE optimization you can use something like
 this
 
-$ watch -n 12 'grep "^\[" minimization_search2_sixstage_RKNB_*.mw |cut -f 1 -d "," |cut -f2 -d "[" |sort -rg |tail '
+     $ watch -n 12 'grep "^\[" minimization_search2_sixstage_RKNB_*.mw |cut -f 1 -d "," |cut -f2 -d "[" |sort -rg |tail '
 
 Running this optimization requires BCH expansion
 coefficients for a six-stage RKNB method. This is given in
