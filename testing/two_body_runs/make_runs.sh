@@ -1,0 +1,10 @@
+../err_check -h 0.005 -t 1200 -e 0.2
+../err_check -h 0.01  -t 1200 -e 0.2
+../err_check -h 0.02  -t 1200 -e 0.2
+../err_check -h 0.04  -t 1200 -e 0.2
+../err_check -h 0.08  -t 1200 -e 0.2
+../err_check -h 0.16  -t 1200 -e 0.2
+../err_check -h 0.32  -t 1200 -e 0.2
+../err_check -h 0.64  -t 1200 -e 0.2
+../err_check -h 1.28  -t 1200 -e 0.2
+../err_check -h 2.56  -t 1200 -e 0.2
