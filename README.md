@@ -130,15 +130,13 @@ indicated below.
 
 I appreciate, but do not require, attribution. If you are unsure
 about what reference to use for attribution, feel free to ask.
-One possibility would be Gürkan (2012, submitted to SIAM Journal on
-Scientific Computing). Note that, if you simply use this software to
-obtain some results to write a paper, you are not required to offer
-me co-authorship or such. Only if I provide extensive help to you
-for using the software, and hence I contribute significant amount
-of my time specifically for your project, I would like to be offered
-co-authorship. Do not let this to discourage you from asking questions,
-but please read the documentation (at least this README and the paper)
-before doing so.
+Note that, if you simply use this software to obtain some results
+to write a paper, you are not required to offer me co-authorship or
+such. Only if I provide extensive help to you for using the software,
+and hence I contribute significant amount of my time specifically
+for your project, I would like to be offered co-authorship. Do not
+let this to discourage you from asking questions, but please read
+the documentation (at least this README and the paper) before doing so.
 
 
 Terms for Copying and Distribution
